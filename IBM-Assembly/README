@@ -1,10 +1,5 @@
 This folder is for my practice code on basic IBM Assembly Language.
 
-Selection Sort: takes a list of numbers and uses the Selection Sort Algorithm to put the list in order from least to greatest and
-   then returns that list for the user. There is currently an LEN definition at the top of the code that specifies the length of
-   the list since we were not required to use malloc or calloc in the assignment.
-   
-Additive Sequence of Primes: reads in two integers that the user inputs, which will be used for the range, then returns the
-   additive sequence of primes in between that range. The additive sequence is such that any number in the sequence is greater
-   than the sum of all of the numbers before it. Example -> 2 5 9 ... Notice how the prime number 7 does not appear in the list.
-   This is because it is equal to the sum of all of the previous numbers.
+Selection Sort: takes a list of numbers and uses the Selection Sort Algorithm to put the list in order from least to greatest and then returns that list for the user. There is currently an LEN definition at the top of the code that specifies the length of the list since we were not required to use malloc or calloc in the assignment.
+
+Additive Sequence of Primes: reads in two integers that the user inputs, which will be used for the range, then returns the additive sequence of primes in between that range. The additive sequence is such that any number in the sequence is greater than the sum of all of the numbers before it. Example -> 2 5 9 ... Notice how the prime number 7 does not appear in the list. This is because it is equal to the sum of all of the previous numbers.
