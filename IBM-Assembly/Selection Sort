@@ -1,0 +1,86 @@
+/*
+Mike Huber
+CSC362
+Due: 11/14/2016
+Assignment 5
+
+This program runs the Selection Sort Algorithm with IBM Assembly code
+*/
+
+#define _CRT_SECURE_NO_WARNINGS
+#define LEN 14
+
+#include <stdio.h>
+
+void main() {
+	int array[LEN];
+	int k, io;						//used for inputting and outputting the array
+	int i, min, minpos, j, temp;	//used in the assembly code
+
+	printf("Input the values of the array: ");
+	for (k = 0; k < LEN; k++) {		//fills the array
+		scanf("%d", &io);
+		array[k] = io;
+	}
+
+	_asm {
+				mov i, 0				//preparing to loop
+				mov ecx, i				//setting all variables
+				mov edx, array[ecx]		//min = a[i]
+				mov min, edx
+				mov minpos, ecx			//minpos = i;
+
+				mov eax, i				//j = i + 1
+				mov j, eax
+				jmp xloop
+
+	top:		add i, 4
+				cmp i, 52
+				je xout
+				mov ecx, i				//setting all variables
+				mov edx, array[ecx]		//min = a[i]
+				mov min, edx
+				mov minpos, ecx			//minpos = i;
+				
+				mov eax, i				//j = i + 1
+				mov j, eax
+
+	xloop:		add j, 4
+				cmp j, 56
+				je top
+
+				mov eax, j
+				mov ebx, array[eax]		//a[j] -> ebx
+				cmp array[ecx], ebx		//if(a[j] < a[i])
+				jl xloop
+
+				mov min, ebx			//min = a[j]
+				mov minpos, eax			//minpos = j
+				mov edx, array[ecx]		//temp = a[i]
+				mov temp, edx
+				mov edx, minpos			//a[i] = a[minpos]
+				mov ebx, array[edx]
+				mov array[ecx], ebx
+				mov ebx, temp			//a[minpos] = temp
+				mov array[edx], ebx
+				jmp xloop
+
+	xout:		nop
+	}
+
+	for (k = 0; k < LEN; k++) {		//prints the array
+		io = array[k];
+		printf("%d ", io);
+	}
+
+	scanf("%d", &io);
+}
+
+/*
+Output:
+Input the values of the array: 100 99 97 95 90 87 86 83 81 77 74 69 63 50 44 43 39 31 29 12
+12 29 31 39 43 44 50 63 69 74 77 81 83 86 87 90 95 97 99 100
+
+Input the values of the array: 8 -1 7 -8 6 3 -4 4 1 -2 9 -5 0 2
+-8 -5 -4 -2 -1 0 1 2 3 4 6 7 8 9
+*/
