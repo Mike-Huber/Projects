@@ -1,0 +1,84 @@
+/**
+ * Created by Mike Huber on 2/28/2017.
+ */
+
+import java.io.*;
+import java.net.*;
+
+public class Client
+{
+    public static void main( String[] args)
+    {
+        Socket toserversocket;
+        int   reply;   // for later use
+
+        System.out.println("CLIENT is attempting connection....");
+        try {
+            toserversocket = new Socket("localhost", 7788);
+            System.out.println("CONNECTION HAS BEEN MADE\n");
+
+            PrintWriter out = new PrintWriter(toserversocket.getOutputStream(), true);
+            BufferedReader in = new BufferedReader(new InputStreamReader(toserversocket.getInputStream()));
+            BufferedReader stdIn = new BufferedReader(new InputStreamReader(System.in));
+            String userInput, responseLine;
+
+            while(true) {
+                if((responseLine = in.readLine()).isEmpty()){
+                    responseLine = in.readLine();
+                    System.out.println("Server: " + responseLine);
+                }
+                else
+                    System.out.println("Server: " + responseLine);
+
+                if ((responseLine = in.readLine()).isEmpty()) {
+                    responseLine = in.readLine();
+                    System.out.println("Server: " + responseLine);
+                } else
+                    System.out.println("Server: " + responseLine);
+
+                if(responseLine.contains("WIN")) {
+                    System.out.println("Client wins!");
+                    System.exit(1);
+                }
+                else if(responseLine.contains("LOSS")) {
+                    System.out.println("Client loses!");
+                    System.exit(1);
+                }
+                else if(responseLine.contains("TIE")) {
+                    System.out.println("It's a tie!!");
+                    System.exit(1);
+                }
+                else {
+
+                    if ((responseLine = in.readLine()).isEmpty()) {
+                        responseLine = in.readLine();
+                        System.out.println(responseLine);
+                    } else
+                        System.out.println(responseLine);
+
+                    if ((responseLine = in.readLine()).isEmpty()) {
+                        responseLine = in.readLine();
+                        System.out.println(responseLine);
+                    } else
+                        System.out.println(responseLine);
+
+                    if ((responseLine = in.readLine()).isEmpty()) {
+                        responseLine = in.readLine();
+                        System.out.println(responseLine);
+                    } else
+                        System.out.println(responseLine);
+
+                    System.out.println("\nEnter your move in the format: 'MOVE row# column#' where row# and column#"
+                            + " are integers between 0 and 2");
+
+                    userInput = stdIn.readLine();
+                    out.println(userInput);
+                }
+            }
+        }
+        catch (IOException e) {
+            System.err.println("Couldn't get I/O for the connection");
+            System.exit(1);
+        }
+    }
+}
