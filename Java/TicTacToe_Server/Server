@@ -1,0 +1,273 @@
+/**
+ * Created by Mike Huber on 2/28/2017.
+ */
+
+import java.net.*;
+import java.io.*;
+import java.util.Random;
+
+public class Server
+{
+    public static void main(String[] args)
+    {
+        while(true) {
+            ServerSocket server; // this is the "door"
+            Socket toclientsocket;
+
+            try {    // NOTE - must be within a try-clause or throw exceptions!!!!
+                String thisline = null;
+                server = new ServerSocket(7788);   //listen at the door
+                System.out.println("Waiting for connection");
+                toclientsocket = server.accept();   // block UNTIL request received
+
+                System.out.println("RECEIVED REQUEST");
+
+                String playerturn;
+                Random firstmove = new Random();
+                if (firstmove.nextBoolean())
+                    playerturn = "Server's turn";
+                else
+                    playerturn = "Client's turn";
+
+                String responseLine, input;
+                char[][] board = new char[3][3];
+                PrintWriter out = new PrintWriter(toclientsocket.getOutputStream(), true);
+                BufferedReader in = new BufferedReader(new InputStreamReader(toclientsocket.getInputStream()));
+                Random rand = new Random();
+                int high = 3, low = 0, count = 0;
+                int result1 = randomizer();
+                int result2 = randomizer();
+
+                for (int i = 0; i < 3; i++) {
+                    for (int j = 0; j < 3; j++) {
+                        board[i][j] = ' ';
+                    }
+                }
+
+                out.println("Starting game...");
+                if (playerturn.equals("Client's turn")) {
+                    out.println("NONE");
+                } else {
+                    out.println(serverMove(board, result1, result2));
+                    count++;
+                }
+
+                while (true) {
+                    out.println(printBoard(board, 0));
+                    out.println(printBoard(board, 1));
+                    out.println(printBoard(board, 2));
+
+                    responseLine = in.readLine();
+                    System.out.println("Client Move: " + responseLine);
+
+                    char[] parsing = responseLine.toCharArray();
+
+                    int arg1 = parsing[5] - 48;
+                    int arg2 = parsing[7] - 48;
+
+                    String s = clientMove(board, arg1, arg2);
+                    count++;
+                    while (s.equals("Invalid move")) {
+                        out.println("Invalid move");
+                        out.println("NONE");
+                        out.println(printBoard(board, 0));
+                        out.println(printBoard(board, 1));
+                        out.println(printBoard(board, 2));
+
+                        responseLine = in.readLine();
+                        System.out.println("Client Move: " + responseLine);
+
+                        parsing = responseLine.toCharArray();
+
+                        arg1 = parsing[5] - 48;
+                        arg2 = parsing[7] - 48;
+
+                        System.out.println("Invalid args: " + arg1 + " " + arg2);
+                        if ((clientMove(board, arg1, arg2)).equals("Valid move")) {
+                            s = "Valid move";
+                        }
+                    }
+
+                    out.println(s); //valid move if we reach here
+
+                    result1 = rand.nextInt(high - low) + low;
+                    result2 = rand.nextInt(high - low) + low;
+
+                    String s2 = serverMove(board, result1, result2);
+                    count++;
+
+                    if (s2.equals("Server wins")) {
+                        out.println("MOVE " + result1 + " " + result2 + " LOSS");
+                    }
+                    else if (s2.equals("Client wins")) {
+                        out.println("MOVE " + 0 + " " + 0 + " WIN");
+                    }
+                    else if (count >= 9) {
+                        out.println("MOVE " + result1 + " " + result2 + " TIE");
+                    }
+                    else
+                        out.println("MOVE " + result1 + " " + result2);
+                }
+            } catch (IOException e) {}
+        }
+    }
+
+    public static String clientMove(char[][] board, int row, int column) {
+        String over = gameOver(board);
+
+        if(validMove(board[row][column])) {
+            if (over.equals("No one")) {
+                board[row][column] = 'O';
+            }
+            else if (over.equals("Last move")) {
+                board[row][column] = 'O';
+                return gameOver(board);
+            }
+            else if(over.equals("Server")) {
+                return "Server wins";
+            }
+            else if(over.equals("Client")) {
+                return "Client wins";
+            }
+            else {
+                return "Tie";
+            }
+        }
+        else
+            return "Invalid move";
+
+        return "Valid move";
+    }
+
+    public static String serverMove(char[][] board, int result1, int result2) {
+        String over = gameOver(board);
+
+        if(!validMove(board[result1][result2])) {
+            for(int i = 0; i < board.length; i++) {
+                for(int j = 0; j < board.length; j++) {
+                    if(board[i][j] == ' ') {
+                        result1 = i;
+                        result2 = j;
+                    }
+                }
+            }
+        }
+
+        if(over.equals("No one")) {
+            board[result1][result2] = 'X';
+            return "MOVE " + result1 + " " + result2;
+        }
+        else if(over.equals("Last move")) {
+            for(int i = 0; i < board.length; i++) {
+                for(int j = 0; j < board.length; j++) {
+                    if(board[i][j] == ' ') {
+                        result1 = i;
+                        result2 = j;
+                    }
+                }
+            }
+            board[result1][result2] = 'X';
+            return "MOVE " + result1 + " " + result2 + " " + over;
+        }
+        else if(over.equals("Server")) {
+            return "Server wins";
+        }
+        else if(over.equals("Client")) {
+            return "Client wins";
+        }
+        else {
+            return "Tie";
+        }
+    }
+
+    public static int randomizer() {
+        Random rand = new Random();
+        int high = 3;
+        int low = 0;
+        return rand.nextInt(high - low) + low;
+    }
+
+    public static boolean validMove(char c) {
+        if(c == ' ')
+            return true;
+        else
+            return false;
+    }
+
+    public static String gameOver(char[][] board) {
+        String winner = "No one";
+        int count = 0;
+
+        //checking all of the horizontal matches
+        if(board[0][0] == 'X' && board[0][1] == 'X' && board[0][2] == 'X')
+            return "Server";
+                else if(board[1][0] == 'X' && board[1][1] == 'X' && board[1][2] == 'X')
+                    return "Server";
+                        else if(board[2][0] == 'X' && board[2][1] == 'X' && board[2][2] == 'X')
+                            return "Server";
+
+        //checking all of the vertical matches
+        if(board[0][0] == 'X' && board[1][0] == 'X' && board[2][0] == 'X')
+            return "Server";
+                else if(board[0][1] == 'X' && board[1][1] == 'X' && board[2][1] == 'X')
+                    return "Server";
+                        else if(board[0][2] == 'X' && board[1][2] == 'X' && board[2][2] == 'X')
+                            return "Server";
+        //checking the diagonals
+        if(board[0][0] == 'X' && board [1][1] == 'X' && board[2][2] == 'X')
+            return "Server";
+                else if(board[0][2] == 'X' && board[1][1] == 'X' && board[2][0] == 'X')
+                    return "Server";
+
+        //checking all of the horizontal matches
+         if(board[0][0] == 'O' && board[0][1] == 'O' && board[0][2] == 'O')
+             return "Client";
+                else if(board[1][0] == 'O' && board[1][1] == 'O' && board[1][2] == 'O')
+                    return "Client";
+                        else if(board[2][0] == 'O' && board[2][1] == 'O' && board[2][2] == 'O')
+                            return "Client";
+
+        //checking all of the vertical matches
+        if(board[0][0] == 'O' && board[1][0] == 'O' && board[2][0] == 'O')
+            return "Client";
+                else if(board[0][1] == 'O' && board[1][1] == 'O' && board[2][1] == 'O')
+                    return "Client";
+                        else if(board[0][2] == 'O' && board[1][2] == 'O' && board[2][2] == 'O')
+                            return "Client";
+
+        //checking the diagonals
+        if(board[0][0] == 'O' && board [1][1] == 'O' && board[2][2] == 'O')
+            return "Client";
+                else if(board[0][2] == 'O' && board[1][1] == 'O' && board[2][0] == 'O')
+                    return "Client";
+
+        else {
+            for (int i = 0; i < board.length; i++) {
+                for (int j = 0; j < board.length; j++) {
+                    if (board[i][j] == ' ')
+                        count++;
+                }
+            }
+        }
+
+        return winner;
+    }
+
+    public static String printBoard(char[][] board, int row) {
+        String boardState;
+
+        if(row == 0) {
+            boardState = "[ " + board[0][0] + " ]" + "[ " + board[0][1] + " ]" + "[ " + board[0][2] + " ]\n";
+        }
+        else if(row == 1) {
+            boardState = "[ " + board[1][0] + " ]" + "[ " + board[1][1] + " ]" + "[ " + board[1][2] + " ]\n";
+        }
+        else if(row == 2) {
+            boardState = "[ " + board[2][0] + " ]" + "[ " + board[2][1] + " ]" + "[ " + board[2][2] + " ]\n";;
+        }
+        else
+            return null;
+
+        return boardState;
+    }
+}
