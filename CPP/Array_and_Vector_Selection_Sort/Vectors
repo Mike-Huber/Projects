@@ -1,0 +1,66 @@
+//
+// Created by Mike's PC on 1/12/2017.
+// Mike Huber
+// CSC 402
+// Assignment 0
+// Timing Java ArrayList vs C++ arrays and vectors
+//
+
+#include <vector>
+#include <time.h>
+#include <stdlib.h>
+#include <chrono>
+#include <iostream>
+
+using namespace std;
+
+void vectors(std::vector<int> inputVector) {
+    srand(time(NULL));
+    //i, c, and d are used as arbitrary values for looping
+    int i, c, d, position, swap, random, limit = 100000;
+
+    //the two print statements below are used for
+    //debugging -> will be commented out for actual runs
+    //cout << "Before sort: ";
+
+    //filling the array
+    for(i = 0; i < limit; i++) {
+        random = rand() % 10;
+        inputVector.push_back(random);
+        //cout << inputVector[i]
+        //     << " ";
+    }
+
+    //start timer
+    auto start = std::chrono::high_resolution_clock::now();
+
+    //selection sort on our vector
+    for (c = 0; c < limit - 1; c++) {
+        position = c;
+
+        for (d = c + 1; d < limit; d++) {
+            if (inputVector[position] > inputVector[d])
+                position = d;
+        }
+        if (position != c) {
+            swap = inputVector[c];
+            inputVector[c] = inputVector[position];
+            inputVector[position] = swap;
+        }
+    }
+
+    //stop timer
+    auto end = std::chrono::high_resolution_clock::now();
+
+    //used for debugging -> will be commented for actual runs
+    //cout << "\n\nAfter sort: ";
+    //for(b = 0; b < limit; b++) {
+    //   cout << inputVector[b]
+    //         << " ";
+    //}
+
+    cout << "Arrays Total time: "
+         << std::chrono::duration<double, std::milli>(end - start).count() / 1000
+         << " seconds"
+         << endl;
+}
