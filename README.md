@@ -2,7 +2,7 @@
 
 This repository is for my personal use and is for storing my projects and test files for reference. There will be a mix of Java, C, C++, and possibly a few other languages. Each will be accompanied by a README file that describes what the program does, and what language it is written in. All projects added to the repository will also be listed below as a sort of index.
 
-
+------------------------------------------------------------------------------------------------------------------------------------------
 
 Java/Music_BST: This is Java code that creates an interactive JavaFX window that allows the user to create nodes, which will be added directly to the tree, and run different types of traversals. These traversals will highlight the path they each took in orange.
 
