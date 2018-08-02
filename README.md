@@ -14,6 +14,10 @@ Array_and_Vector_Selection_Sort: This C++ code creates a simple array and sorts 
 
 ## Java
 
-Java/Music_BST: This is Java code that creates an interactive JavaFX window that allows the user to create nodes, which will be added directly to the tree, and run different types of traversals. These traversals will highlight the path they each took in orange.
+Music_BST: This is Java code that creates an interactive JavaFX window that allows the user to create nodes, which will be added directly to the tree, and run different types of traversals. These traversals will highlight the path they each took in orange.
 
-Java/TicTacToe_Server: This Java code uses a socket to connect clients to a pseudo-server and allows them to play TicTacToe against that server. From this project, we also looked at multi-threading in Java.
+TicTacToe_Server: This Java code uses a socket to connect clients to a pseudo-server and allows them to play TicTacToe against that server. From this project, we also looked at multi-threading in Java.
+
+## Python
+
+Tiki: This project was a Software Engineering task that included designing, securing, and configuring a knowledge management system through a Wiki using Python and the REST API.
