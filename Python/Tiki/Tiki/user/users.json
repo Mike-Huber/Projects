@@ -1,0 +1,23 @@
+{
+  "mike": {
+    "active": true, 
+    "authentication_method": "cleartext", 
+    "password": "huber", 
+    "authenticated": true, 
+    "roles": []
+  }, 
+  "name": {
+    "active": true, 
+    "authentication_method": "cleartext", 
+    "password": "1234", 
+    "authenticated": true, 
+    "roles": []
+  }, 
+  "sam": {
+    "active": true,
+    "authentication_method": "cleartext", 
+    "password": "1234", 
+    "authenticated": true, 
+    "roles": []
+  }
+}
