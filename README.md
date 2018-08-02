@@ -4,6 +4,10 @@ This repository is for my personal use and is for storing my projects and test f
 
 ------------------------------------------------------------------------------------------------------------------------------------------
 
+## Android
+
+Dungeons_and_Dragons: This app was created as a group project for my first class on writing Android applications. We used Android Studio to write the main Java code, and JSON files for a quick and easy way to call assets.
+
 ## CPP
 
 Array_and_Vector_Selection_Sort: This C++ code creates a simple array and sorts it, as well as timing the sort. It also creates a simple vector and sorts that, also timing that. This was done in school to compare the different ways of sorting.
