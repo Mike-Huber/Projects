@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/character_sheet_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/character_sheet_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/string_char_sheet_text"
+            android:layout_gravity="center"
+            android:textSize="10pt"/>
+
+        <LinearLayout
+            android:id="@+id/character_sheet_name_linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:id="@+id/character_sheet_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/string_char_name_text"
+                android:layout_gravity="center_vertical"
+                android:labelFor="@+id/character_sheet_name_edittext"/>
+
+            <EditText
+                android:id="@+id/character_sheet_name_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:inputType="text"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/character_sheet_level_linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:id="@+id/character_sheet_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/string_char_level_text"
+                android:layout_gravity="center_vertical"
+                android:labelFor="@+id/character_sheet_level_edittext"/>
+
+            <EditText
+                android:id="@+id/character_sheet_level_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:inputType="number"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/character_sheet_class_linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:id="@+id/character_sheet_class"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/string_char_class_text"
+                android:layout_gravity="center_vertical"
+                android:labelFor="@+id/character_sheet_class_spinner"/>
+
+            <Spinner
+                android:id="@+id/character_sheet_class_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/character_sheet_race_linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:id="@+id/character_sheet_race"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/string_char_race_text"
+                android:layout_gravity="center_vertical"
+                android:labelFor="@+id/character_sheet_race_spinner"/>
+
+            <Spinner
+                android:id="@+id/character_sheet_race_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/character_sheet_stats_linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:id="@+id/character_sheet_stats"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/string_char_stats_text"
+                android:layout_gravity="center_vertical"/>
+
+            <LinearLayout
+                android:id="@+id/character_sheet_stats_str_linearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/character_sheet_stats_str"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/string_char_stats_str_text"
+                    android:layout_gravity="center_vertical"
+                    android:labelFor="@+id/character_sheet_stats_str_edittext"/>
+
+                <EditText
+                    android:id="@+id/character_sheet_stats_str_edittext"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:inputType="number"/>
+
+                <TextView
+                    android:id="@+id/character_sheet_stats_str_modifier"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/string_char_stats_mod_text"
+                    android:layout_gravity="center_vertical"
+                    android:labelFor="@+id/character_sheet_stats_str_mod_edittext"/>
+
+                <EditText
+                    android:id="@+id/character_sheet_stats_str_mod_edittext"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:inputType="number"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/character_sheet_stats_dex_linearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/character_sheet_stats_dex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/string_char_stats_dex_text"
+                    android:layout_gravity="center_vertical"
+                    android:labelFor="@+id/character_sheet_stats_dex_edittext"/>
+
+                <EditText
+                    android:id="@+id/character_sheet_stats_dex_edittext"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:inputType="number"/>
+
+                <TextView
+                    android:id="@+id/character_sheet_stats_dex_modifier"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/string_char_stats_mod_text"
+                    android:layout_gravity="center_vertical"
+                    android:labelFor="@+id/character_sheet_stats_dex_mod_edittext"/>
+
+                <EditText
+                    android:id="@+id/character_sheet_stats_dex_mod_edittext"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:inputType="number"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/character_sheet_stats_con_linearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/character_sheet_stats_con"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/string_char_stats_con_text"
+                    android:layout_gravity="center_vertical"
+                    android:labelFor="@+id/character_sheet_stats_con_edittext"/>
+
+                <EditText
+                    android:id="@+id/character_sheet_stats_con_edittext"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:inputType="number"/>
+
+                <TextView
+                    android:id="@+id/character_sheet_stats_con_modifier"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/string_char_stats_mod_text"
+                    android:layout_gravity="center_vertical"
+                    android:labelFor="@+id/character_sheet_stats_con_mod_edittext"/>
+
+                <EditText
+                    android:id="@+id/character_sheet_stats_con_mod_edittext"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:inputType="number"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/character_sheet_stats_int_linearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/character_sheet_stats_int"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/string_char_stats_int_text"
+                    android:layout_gravity="center_vertical"
+                    android:labelFor="@+id/character_sheet_stats_int_edittext"/>
+
+                <EditText
+                    android:id="@+id/character_sheet_stats_int_edittext"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:inputType="number"/>
+
+                <TextView
+                    android:id="@+id/character_sheet_stats_int_modifier"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/string_char_stats_mod_text"
+                    android:layout_gravity="center_vertical"
+                    android:labelFor="@+id/character_sheet_stats_int_mod_edittext"/>
+
+                <EditText
+                    android:id="@+id/character_sheet_stats_int_mod_edittext"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:inputType="number"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/character_sheet_stats_wis_linearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/character_sheet_stats_wis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/string_char_stats_wis_text"
+                    android:labelFor="@+id/character_sheet_stats_wis_edittext"/>
+
+                <EditText
+                    android:id="@+id/character_sheet_stats_wis_edittext"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:inputType="number"/>
+
+                <TextView
+                    android:id="@+id/character_sheet_stats_wis_modifier"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/string_char_stats_mod_text"
+                    android:layout_gravity="center_vertical"
+                    android:labelFor="@+id/character_sheet_stats_wis_mod_edittext"/>
+
+                <EditText
+                    android:id="@+id/character_sheet_stats_wis_mod_edittext"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:inputType="number"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/character_sheet_button_linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <Button
+                android:id="@+id/character_sheet_button_newButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/string_char_button_new"/>
+            <Button
+                android:id="@+id/character_sheet_button_saveButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/string_char_button_save"/>
+            <Button
+                android:id="@+id/character_sheet_button_loadButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/string_char_button_load"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

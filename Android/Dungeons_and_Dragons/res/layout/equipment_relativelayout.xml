@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/equipment_relativelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/equipment_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="@dimen/equipment_header_size"
+        android:layout_marginTop="@dimen/equipment_margins"
+        android:text="Header"/>
+
+    <TextView
+        android:id="@+id/equipment_cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/equipment_header"
+        android:textSize="@dimen/equipment_cost_size"
+        android:layout_marginTop="@dimen/equipment_margins"
+        android:layout_marginLeft="@dimen/equipment_margins"
+        android:text="Cost: "/>
+
+    <TextView
+        android:id="@+id/equipment_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/equipment_weight_size"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/equipment_header"
+        android:layout_marginTop="@dimen/equipment_margins"
+        android:layout_marginRight="@dimen/equipment_margins"
+        android:text="Weight: "/>
+
+    <TextView
+        android:id="@+id/equipment_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/equipment_cost"
+        android:textSize="@dimen/equipment_description"
+        android:layout_marginTop="@dimen/equipment_margins"
+        android:layout_marginLeft="@dimen/equipment_margins"
+        android:layout_marginRight="@dimen/equipment_margins"
+        android:text="Description: "/>
+
+</RelativeLayout>

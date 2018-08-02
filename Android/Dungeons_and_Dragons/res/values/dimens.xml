@@ -1,0 +1,25 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="button_width">200dp</dimen>
+    <dimen name="button_height">65dp</dimen>
+
+    <dimen name="button_width_land">125dp</dimen>
+    <dimen name="button_height_land">125dp</dimen>
+
+    <dimen name="quote_size">15sp</dimen>
+    <dimen name="description_size">20sp</dimen>
+    <dimen name="header_size">25sp</dimen>
+
+    <dimen name="equipment_header_size">25sp</dimen>
+    <dimen name="equipment_cost_size">15sp</dimen>
+    <dimen name="equipment_weight_size">15sp</dimen>
+    <dimen name="equipment_description">20sp</dimen>
+    <dimen name="equipment_margins">15dp</dimen>
+
+    <dimen name="armor_header_size">25sp</dimen>
+    <dimen name="armor_sub_headers_size">20sp</dimen>
+    <dimen name="armor_margins">15dp</dimen>
+</resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/armor_relativelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/armor_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="@dimen/armor_header_size"
+        android:layout_marginTop="@dimen/armor_margins"
+        android:text="Header"/>
+
+    <TextView
+        android:id="@+id/armor_cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/armor_header"
+        android:textSize="@dimen/armor_sub_headers_size"
+        android:layout_marginTop="@dimen/armor_margins"
+        android:layout_marginLeft="@dimen/armor_margins"
+        android:text="Cost: "/>
+
+    <TextView
+        android:id="@+id/armor_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/armor_sub_headers_size"
+        android:layout_below="@+id/armor_cost"
+        android:layout_marginTop="@dimen/armor_margins"
+        android:layout_marginRight="@dimen/armor_margins"
+        android:layout_marginLeft="@dimen/armor_margins"
+        android:text="Weight: "/>
+
+    <TextView
+        android:id="@+id/armor_ac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/armor_weight"
+        android:textSize="@dimen/armor_sub_headers_size"
+        android:layout_marginTop="@dimen/armor_margins"
+        android:layout_marginLeft="@dimen/armor_margins"
+        android:layout_marginRight="@dimen/armor_margins"
+        android:text="AC: "/>
+</RelativeLayout>

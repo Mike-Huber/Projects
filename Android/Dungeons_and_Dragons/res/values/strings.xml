@@ -1,0 +1,839 @@
+<resources>
+    <string name="app_name">Dungeon Helper</string>
+
+    <string name="races_activity_label">Races</string>
+    <string name="equipment_activity_label">Equipment</string>
+    <string name="armor_activity_label">Armor</string>
+
+    <string name="string_races">Races</string>
+    <string name="string_classes">Classes</string>
+    <string name="string_equipment">Equipment</string>
+    <string name="string_weapons">Weapons</string>
+    <string name="string_armor">Armor</string>
+    <string name="string_dice">Dice Roller</string>
+    <string name="string_character_sheet">Character Creator</string>
+    <string name="barbarian_header">Barbarian</string>
+    <string name="barbarian_description">Primal Instinct:\n
+People of towns and cities take pride in how their
+civilized ways set them apart from animals, as if
+denying one’s own nature was a mark of superiority. To
+a barbarian, though, civilization is no virtue, but a sign
+of weakness. The strong embrace their animal nature keen
+instincts, primal physicality, and ferocious rage.
+Barbarians are uncomfortable when hedged in by walls
+and crowds. They thrive in the wilds of their homelands:
+the tundra, jungle, or grasslands w here their tribes
+live and hunt.
+Barbarians come alive in the chaos of combat.
+They can enter a berserk state where rage takes over,
+giving them superhuman strength and resilience. A
+barbarian can draw on this reservoir of fury only a few
+times without resting, but those few rages are usually
+sufficient to defeat whatever threats arise.\n\n
+A Life of Danger:\n
+Not every member of the tribes deemed “barbarians”
+by scions of civilized society has the barbarian class. A
+true barbarian among these people is as uncommon as
+a skilled fighter in a town, and he or she plays a similar
+role as a protector of the people and a leader in times
+of war. Life in the wild places of the world is fraught
+with peril: rival tribes, deadly weather, and terrifying
+monsters. Barbarians charge headlong into that danger
+so that their people don’t have to.
+Their courage in the face of danger makes barbarians
+perfectly suited for adventuring. Wandering is often a
+way of life for their native tribes, and the rootless life of
+the adventurer is little hardship for a barbarian. Some
+barbarians m iss the close-knit family structures of the
+tribe, but eventually find them replaced by the bonds
+formed among the members of their adventuring parties.
+</string>
+    <string name="bard_header">Bard</string>
+    <string name="bard_description">Music And Magic:\n In the worlds of D&amp;D, words and music are
+not just vibrations of air, but vocalizations with
+power all their own. The bard is a master of song,
+speech, and the magic they contain. Bards say
+that the multiverse was spoken into existence, that the
+words o f the gods gave it shape, and that echoes of these
+primordial Words of Creation still resound throughout
+the cosmos. The music of bards is an attempt to snatch
+and harness those echoes, subtly woven into their
+spells and powers.
+The greatest strength of bards is their sheer
+versatility. Many bards prefer to stick to the sidelines
+in combat, using their magic to inspire their allies and
+hinder their foes from a distance. But bards are capable
+of defending themselves in melee if necessary, using
+their magic to bolster their sw ords and armor. Their
+spells lean toward charm s and illusions rather than
+blatantly destructive spells. They have a wide-ranging
+knowledge of many subjects and a natural aptitude
+that lets them do alm ost anything well. Bards become
+masters of the talents they set their minds to perfecting,
+from musical perform ance to esoteric knowledge.\n\n
+Learning from Experience:\n
+True bards are not com m on in the world. Not every
+minstrel singing in a tavern or jester cavorting in a royal
+court is a bard. Discovering the magic hidden in music
+requires hard study and som e measure of natural talent
+that most troubadours and jongleurs lack. It can be hard
+to spot the difference between these perform ers and true
+bards, though. A bard’s life is spent wandering across
+the land gathering lore, telling stories, and living on the
+gratitude of audiences, much like any other entertainer.
+But a depth of knowledge, a level of musical skill, and a
+touch of magic set bards apart from their fellows.
+Only rarely do bards settle in one place for long, and
+their natural desire to travel—to find new tales to tell,
+new skills to learn, and new discoveries beyond the
+horizon—makes an adventuring career a natural calling.
+Every adventure is an opportunity to learn, practice a
+variety of skills, enter long-forgotten tombs, discover lost
+works of magic, decipher old tomes, travel to strange
+places, or encounter exotic creatures. Bards love to
+accompany heroes to witness their deeds firsthand. A
+bard who can tell an awe-inspiring story from personal
+experience earns renown among other bards. Indeed,
+after telling so many stories about heroes accomplishing
+mighty deeds, many bards take these themes to heart
+and assume heroic roles themselves</string>
+    <string name="cleric_header">Cleric</string>
+    <string name="cleric_description">Healers and Warriors\n
+Divine magic, as the name suggests, is the power of
+the gods, flowing from them into the world. Clerics are
+conduits for that power, manifesting it as miraculous
+effects. The gods don’t grant this power to everyone who
+seeks it, but only to those chosen to fulfill a high calling.
+Harnessing divine magic doesn’t rely on study or
+training. A cleric might learn formulaic prayers and
+ancient rites, but the ability to cast cleric spells relies on
+devotion and an intuitive sense o f a deity’s wishes.
+Clerics combine the helpful magic of healing and
+inspiring their allies with spells that harm and hinder
+foes. They can provoke awe and dread, lay curses of
+plague or poison, and even call down flames from heaven
+to consume their enemies. For those evildoers who will
+benefit most from a mace to the head, clerics depend on
+their combat training to let them wade into melee with
+the power of the gods on their side.\n\n
+Divine Agents:\n
+Not every acolyte or officiant at a temple or shrine is a
+cleric. Some priests are called to a simple life of temple
+service, carrying out their gods’ will through prayer and
+sacrifice, not by magic and strength of arms. In some
+cities, priesthood amounts to a political office, viewed
+as a stepping stone to higher positions of authority and
+involving no communion with a god at all. True clerics
+are rare in most hierarchies.
+When a cleric takes up an adventuring life, it is usually
+because his or her god demands it. Pursuing the goals
+of the gods often involves braving dangers beyond the
+walls of civilization, smiting evil or seeking holy relics in
+ancient tombs. Many clerics are also expected to protect their deities’ worshipers, which can mean fighting
+rampaging orc s, negotiating peace between warring
+nations, or sealing a portal that would allow a demon
+prince to enter the world.
+Most adventuring clerics maintain some connection to
+established temples and orders of their faiths. A temple
+might ask for a cleric’s aid, or a high priest might be in a
+position to demand it.</string>
+    <string name="druid_header">Druid</string>
+    <string name="druid_description">Power of Nature:\n
+Druids revere nature above all, gaining their spells and
+other magical powers either from the force of nature
+itself or from a nature deity. Many druids pursue a
+mystic spirituality of transcendent union with nature
+rather than devotion to a divine entity, while others
+serve gods o f wild nature, animals, or elemental forces.
+The ancient druidic traditions are sometimes called
+the Old Faith, in contrast to the worship of gods in
+temples and shrines.
+Druid spells are oriented toward nature and anim als—
+the power of tooth and claw, of sun and moon, of fire
+and storm. Druids also gain the ability to take on animal
+forms, and some druids make a particular study of this
+practice, even to the point where they prefer animal
+form to their natural form.\n\n
+Preserve the Balance:\n
+For druids, nature exists in a precarious balance. The
+four elements that make up a world—air, earth, fire, and water—must remain in equilibrium. If one element
+were to gain power over the others, the world could be
+destroyed, drawn into one of the elemental planes and
+broken apart into its component elements. Thus, druids
+oppose cults of Elemental Evil and others who promote
+one element to the exclusion of others.
+Druids are also concerned with the delicate ecological
+balance that sustains plant and animal life, and the need
+for civilized folk to live in harmony with nature, not in
+opposition to it. Druids accept that w hich is cruel in
+nature, and they hate that which is unnatural, including
+aberrations (such as beholders and mind flayers)
+and undead (such as zom bies and vampires). Druids
+sometim es lead raids against such creatures, especially
+when the monsters encroach on the druids’ territory.
+Druids are often found guarding sacred sites or
+watching over regions of unspoiled nature. But when a
+significant danger arises, threatening nature’s balance
+or the lands they protect, druids take on a more active
+role in combating the threat, as adventurers.
+</string>
+    <string name="fighter_header">Fighter</string>
+    <string name="fighter_description">
+Well-Rounded Specialists:\n
+Fighters learn the basics of all combat styles. Every
+fighter can swing an axe, fence with a rapier, wield a
+longsword or a greatsword, use a bow, and even trap foes
+in a net with some degree of skill. Likewise, a fighter is
+adept with shields and every form of armor. Beyond that
+basic degree of familiarity, each fighter specializes in a
+certain style of combat. Som e concentrate on archery,
+some on fighting with two weapons at once, and some
+on augmenting their martial skills with magic. This
+combination of broad general ability and extensive
+specialization makes fighters superior combatants
+on battlefields and in dungeons alike.\n\n
+Trained for Danger:\n
+Not every member of the city watch, the village militia,
+or the queen’s army is a fighter. Most of these troops are
+relatively untrained soldiers with only the most basic
+combat knowledge. Veteran soldiers, military officers,
+trained bodyguards, dedicated knights, and similar
+figures are fighters. Some fighters feel drawn to use their training as
+adventurers. The dungeon delving, monster slaying, and
+other dangerous work common among adventurers is
+second nature for a fighter, not all that different from
+the life he or she left behind. There are greater risks,
+perhaps, but also much greater rewards—few fighters in
+the city watch have the opportunity to discover a magic
+flame tongue sword, for example.</string>
+    <string name="monk_header">Monk</string>
+    <string name="monk_description">The Magic of Ki:\n
+Monks make careful study of a magical energy that most
+monastic traditions call ki. This energy is an element
+of the magic that suffuses the multiverse—specifically,
+the element that flows through living bodies. Monks
+harness this power within themselves to create magical
+effects and exceed their bodies\' physical capabilities,
+and some of their special attacks can hinder the flow of
+ki in their opponents. Using this energy, monks channel
+uncanny speed and strength into their unarmed strikes.
+As they gain experience, their martial training and their
+mastery of ki gives them more power over their bodies
+and the bodies of their foes.\n\n
+Training and Asceticism:\n
+Small walled cloisters dot the landscapes of the worlds
+of D&amp;D, tiny refuges from the flow of ordinary life,
+where time seems to stand still. The monks who live
+there seek personal perfection through contemplation
+and rigorous training. Many entered the monastery
+as children, sent to live there when their parents died,
+when food couldn’t be found to support them, or in
+return for some kindness that the monks had performed
+for their families.
+Some monks live entirely apart from the surrounding
+population, secluded from anything that might impede
+their spiritual progress. Others are sworn to isolation, emerging only to serve as spies or assassins at the
+command of their leader, a noble patron, or some other
+mortal or divine power.
+The majority of monks don’t shun their neighbors,
+making frequent visits to nearby towns or villages and
+exchanging their service for food and other goods. As
+versatile warriors, monks often end up protecting their
+neighbors from monsters or tyrants.
+For a monk, becoming an adventurer means leaving
+a structured, communal lifestyle to become a wanderer.
+This can be a harsh transition, and monks don’t
+undertake it lightly. Those who leave their cloisters take
+their work seriously, approaching their adventures as
+personal tests of their physical and spiritual growth.
+As a rule, monks care little for material wealth and are
+driven by a desire to accomplish a greater mission than
+merely slaying monsters and plundering their treasure.</string>
+    <string name="paladin_header">Paladin</string>
+    <string name="paladin_description">The Cause of Righteousness:\n
+A paladin swears to uphold justice and righteousness,
+to stand with the good things of the world against the
+encroaching darkness, and to hunt the forces of evil
+wherever they lurk. Different paladins focus on various
+aspects of the cause of righteousness, but all are
+bound by the oaths that grant them power to do their
+sacred work. Although many paladins are devoted to
+gods of good, a paladin’s power com es as much from a
+commitment to justice itself as it does from a god.
+Paladins train for years to learn the skills of combat,
+mastering a variety of weapons and armor. Even so,
+their martial skills are secondary to the magical power
+they wield: power to heal the sick and injured, to smite
+the wicked and the undead, and to protect the innocent
+and those who join them in the fight for justice.\n\n
+Beyond the Mundane Life:\n
+Almost by definition, the life of a paladin is an
+adventuring life. Unless a lasting injury has taken him
+or her away from adventuring for a time, every paladin
+lives on the front lines of the cosmic struggle against evil. Fighters are rare enough am ong the ranks of the
+militias and armies of the world, but even fewer people
+can claim the true calling of a paladin. When they do
+receive the call, these warriors turn from their former
+occupations and take up arms to fight evil. Sometimes
+their oaths lead them into the service of the crown as
+leaders of elite groups of knights, but even then their
+loyalty is first to the cause of righteousness, not to
+crown and country.
+Adventuring paladins take their work seriously. A
+delve into an ancient ruin or dusty crypt can be a quest
+driven by a higher purpose than the acquisition of
+treasure. Evil lurks in dungeons and primeval forests,
+and even the smallest victory against it can tilt the
+cosmic balance away from oblivion.</string>
+    <string name="ranger_header">Ranger</string>
+    <string name="ranger_description">Deadly Hunters:\n
+Warriors of the wilderness, rangers specialize in
+hunting the monsters that threaten the edges of
+civilization—humanoid raiders, rampaging beasts and
+monstrosities, terrible giants, and deadly dragons. They
+learn to track their quarry as a predator does, moving
+stealthily through the wilds and hiding themselves in
+brush and rubble. Rangers focus their combat training
+on techniques that are particularly useful against their
+specific favored foes.
+Thanks to their familiarity with the wilds, rangers
+acquire the ability to cast spells that harness nature’s
+power, much as a druid does. Their spells, like their
+combat abilities, emphasize speed, stealth, and the hunt.
+A ranger’s talents and abilities are honed with deadly
+focus on the grim task of protecting the borderlands.\n\n
+Independent Adventurers:\n
+Though a ranger might make a living as a hunter, a
+guide, or a tracker, a ranger’s true calling is to defend
+the outskirts of civilization from the ravages of monsters
+and humanoid hordes that press in from the wild. In
+some places, rangers gather in secretive orders or join
+forces with druidic circles. Many rangers, though, are
+independent almost to a fault, knowing that, when a
+dragon or a band of orcs attacks, a ranger might be the
+first—and possibly the last—line of defense.
+This fierce independence makes rangers w ell suited
+to adventuring, since they are accustomed to life far
+from the comforts of a dry bed and a hot bath. Faced
+with city-bred adventurers who grouse and whine about
+the hardships of the wild, rangers respond with some mixture of amusement, frustration, and compassion.
+But they quickly learn that other adventurers who can
+carry their own weight in a fight against civilization’s
+foes are worth any extra burden. Coddled city folk might
+not know how to feed themselves or find fresh water in
+the wild, but they make up for it in other ways.
+</string>
+    <string name="rogue_header">Rogue</string>
+    <string name="rogue_description">Skill And Precision:\n
+        Rogues devote as much effort to mastering the use of
+a variety of skills as they do to perfecting their combat
+abilities, giving them a broad expertise that few other
+characters can match. Many rogues focus on stealth and
+deception, while others refine the skills that help them
+in a dungeon environment, such as climbing, finding and
+disarming traps, and opening locks.
+When it com es to combat, rogues prioritize cunning
+over brute strength. A rogue would rather make one
+precise strike, placing it exactly where the attack will
+hurt the target most, than wear an opponent down
+with a barrage of attacks. Rogues have an almost
+supernatural knack for avoiding danger, and a few learn
+magical tricks to supplement their other abilities.\n\n
+A Shady Living:\n
+Every town and city has its share of rogues. Most of
+them live up to the worst stereotypes of the class,
+making a living as burglars, assassins, cutpurses, and
+con artists. Often, these scoundrels are organized
+into thieves’ guilds or crim e families. Plenty of rogues
+operate independently, but even they sometimes
+recruit apprentices to help them in their scams
+and heists. A few rogues make an honest living as locksmiths, investigators, or exterminators, which can
+be a dangerous job in a world where dire rats—and
+wererats—haunt the sewers.
+As adventurers, rogues fall on both sides of the law.
+Some are hardened criminals who decide to seek
+their fortune in treasure hoards, while others take up
+a life of adventure to escape from the law. Some have
+learned and perfected their skills with the explicit
+purpose of infiltrating ancient ruins and hidden crypts
+in search of treasure.</string>
+    <string name="sorcerer_header">Rogue</string>
+    <string name="sorcerer_description">Raw Magic:\n
+        Magic is a part of every sorcerer, suffusing body, mind,
+and spirit with a latent power that waits to be tapped.
+Some sorcerers wield magic that springs from an
+ancient bloodline infused with the magic of dragons.
+Others carry a raw, uncontrolled magic within them,
+a chaotic storm that manifests in unexpected ways.
+The appearance of sorcerous pow ers is wildly
+unpredictable. Some draconic bloodlines produce
+exactly one sorcerer in every generation, but in other
+lines of descent every individual is a sorcerer. Most
+of the time, the talents of sorcery appear as apparent
+flukes. Some sorcerers can’t name the origin of their
+power, while others trace it to strange events in their
+own lives. The touch of a demon, the blessing of a
+dryad at a baby’s birth, or a taste of the water from
+a mysterious spring might spark the gift of sorcery.
+So too might the gift of a deity of m agic, exposure
+to the elemental forces of the Inner Planes or the
+maddening chaos of Limbo, or a glimpse into the
+inner workings of reality.
+Sorcerers have no use for the spellbooks and ancient
+tom es of m agic lore that wizards rely on, nor do they
+rely on a patron to grant their spells as warlocks do.
+By learning to harness and channel their own inborn
+magic, they can discover new and staggering ways
+to unleash that power.\n\n
+Unexplained Powers:\n
+Sorcerers are rare in the world, and it’s unusual to find
+a sorcerer who is not involved in the adventuring life
+in some way. People with magical power seething in
+their veins soon discover that the power doesn’t like to
+stay quiet. A sorcerer’s magic wants to be wielded, and
+it has a tendency to spill out in unpredictable ways if
+it isn’t called on. Sorcerers often
+have obscure or quixotic
+motivations driving them
+to adventure. Som e seek a greater
+understanding of the magical force that infuses
+them, or the answer to the mystery of its origin. Others
+hope to find a way to get rid of it, or to unleash its full
+potential. Whatever their goals, sorcerers are every bit
+as useful to an adventuring party as wizards, making
+up for a comparative lack of breadth in their magical
+knowledge with enormous flexibility in using the
+spells they know.</string>
+    <string name="warlock_header">Warlock</string>
+    <string name="warlock_description">Sworn and Beholden:\n
+A warlock is defined by a pact with an otherworldly
+being. Sometimes the relationship between warlock
+and patron is like that of a cleric and a deity, though
+the beings that serve as patrons for warlocks are not
+gods. A warlock might lead a cult dedicated to a demon
+prince, an archdevil, or an utterly alien entity—beings
+not typically served by clerics. More often, though, the
+arrangement is similar to that between a master and
+an apprentice. The warlock learns and grows in power,
+at the cost of occasional services performed on the
+patron’s behalf.
+The magic bestowed on a warlock ranges from minor
+but lasting alterations to the warlock\'s being (such as
+the ability to see in darkness or to read any language)
+to access to powerful spells. Unlike bookish wizards,
+warlocks supplement their magic with some facility
+at hand-to-hand combat. They are com fortable in light
+arm or and know how to use simple weapons.\n\n
+Delvers in to Secrets:\n
+Warlocks are driven by an insatiable need for knowledge
+and power, which compels them into their pacts and
+shapes their lives. This thirst drives warlocks into their
+pacts and shapes their later careers as well.
+Stories of warlocks binding themselves to fiends are
+widely known. But many warlocks serve patrons that
+are not fiendish. Sometim es a traveler in the wilds
+comes to a strangely beautiful tower, meets its fey lord
+or lady, and stumbles into a pact without being fully
+aware of it. And sometim es, while poring over tomes of forbidden lore, a brilliant but crazed student’s mind is
+opened to realities beyond the material world and to the
+alien beings that dwell in the outer void.
+Once a pact is made, a warlock’s thirst for knowledge
+and power can’t be slaked with mere study and research.
+No one makes a pact with such a mighty patron if he or
+she doesn’t intend to use the power thus gained. Rather,
+the vast majority of warlocks spend their days in active
+pursuit of their goals, which typically means some kind
+of adventuring. Furthermore, the demands of their
+patrons drive warlocks toward adventure.
+</string>
+    <string name="wizard_header">Wizard</string>
+    <string name="wizard_description">Scholars of the Arcane:\n
+Wild and enigmatic, varied in form and function, the
+power of magic draws students who seek to master
+its mysteries. Some aspire to become like the gods,
+shaping reality itself. Though the casting of a typical
+spell requires merely the utterance of a few strange
+words, fleeting gestures, and sometimes a pinch or
+clump of exotic materials, these surface components
+barely hint at the expertise attained after years of
+apprenticeship and countless hours of study.
+Wizards live and die by their spells. Everything else
+is secondary. They learn new spells as they experiment
+and grow in experience. They can also learn them from
+other wizards, from ancient tomes or inscriptions,
+and from ancient creatures (such as the fey) that are
+steeped in magic.\n\n
+    The Lure of Knowledge:\n
+Wizards’ lives are seldom mundane. The closest a
+wizard is likely to come to an ordinary life is working
+as a sage or lecturer in a library or university, teaching
+others the secrets of the multiverse. Other wizards sell
+their services as diviners, serve in military forces, or
+pursue lives of crime or domination.
+But the lure of knowledge and power calls even the
+most unadventurous wizards out of the safety of their
+libraries and laboratories and into crumbling ruins and
+lost cities. Most wizards believe that their counterparts
+in ancient civilizations knew secrets of magic that have
+been lost to the ages, and discovering those secrets
+could unlock the path to a power greater than any magic
+available in the present age.
+</string>
+    <string name="dwarf_header">Dwarf</string>
+    <string name="dwarf_quote">\"Yerlate, elf!\" came the rough edge of a familiar voice.
+        Bruenor Battlehammer walked up the back of his
+        dead foe, disregarding the fact that the heavy monster lay
+        on top of his elven friend. In spite of the added discomfort,
+        the dwarf\’s long, pointed, often-broken nose and graystreaked
+        though still-fiery red beard came as a welcome
+        sight to Drizzt. \"Knew I’d find ye in trouble if I came out
+        an\' looked for ye!\"\n\n
+
+        —R. A . Salvatore, The Crystal Shard</string>
+    <string name="dwarf_description">Your dwarf character has an assortment of inborn
+        abilities, part and parcel of dwarven nature.\n\n
+
+        Ability Score Increase: Your Constitution score increases by 2.\n\n
+
+        Age: Dwarves mature at the same rate as humans, but they’re considered young until they
+        reach the age of 50. On average, they live about 350 years.\n\n
+
+        Alignment: Most dwarves are lawful, believing firmly in the benefits of a well-ordered
+        society. They tend toward good as well, with a strong sense of fair play and
+        a belief that everyone deserves to share in the benefits of
+        a just order.\n\n
+
+        Size: Dwarves stand between 4 and 5 feet tall and
+        average about 150 pounds. Your size is Medium.\n\n
+
+        Speed: Your base walking speed is 25 feet. Your
+        speed is not reduced by wearing heavy armor.\n\n
+
+        Dark-vision: Accustomed to life underground, you
+        have superior vision in dark and dim conditions. You
+        can see in dim light within 60 feet of you as if it were
+        bright light, and in darkness as if it were dim light. You
+        can’t discern color in darkness, only shades of gray.\n\n
+
+        Dwarven Resilience: You have advantage on saving
+        throws against poison, and you have resistance against
+        poison damage (explained in chapter 9).\n\n
+
+        Dwarven Combat Training: You have proficiency
+        with the battleaxe, handaxe, throwing hammer,
+        and warhammer.\n\n
+
+        Tool Proficiency: You gain proficiency with the
+        artisan’s tools of your choice: smith’s tools, brewer’s
+        supplies, or mason’s tools.\n\n
+
+        Stonecunning: Whenever you make an Intelligence
+        (History) check related to the origin of stonework, you
+        are considered proficient in the History skill and add
+        double your proficiency bonus to the check, instead of
+        your normal proficiency bonus.\n\n
+
+        Languages: You can speak, read, and write Common
+        and Dwarvish. Dwarvish is full of hard consonants and
+        guttural sounds, and those characteristics spill over into
+        whatever other language a dwarf might speak.</string>
+
+    <string name="elf_header">Elf</string>
+    <string name="elf_quote">\"I have never imagined such beauty existed,\"
+        Goldmoon said softly. The day\'s march had been difficult, but the reward at the end was
+        beyond their dreams. The companions stood on the high cliff over the fabled city of
+        Qualinost. Four slender spires rose from the city’s corners like glistening
+        spindles, their brilliant white stone marbled with shining
+        silver. Graceful arches, swooping from spire to spire, soared
+        through the air. Crafted by ancient dwarven metalsmiths,
+        they were strong enough to hold the weight of an army, yet
+        they appeared so delicate that a bird lighting on them might
+        overthrow the balance. These glistening arches were the
+        city\’s only boundaries; there was no wall around Qualinost.
+        The elven city opened its arms lovingly to the wilderness.\n\n
+
+        —Margaret Weis and Tracy Hickman,\n
+        Dragons of Autumn Twilight</string>
+    <string name="elf_description">Your elf character has a variety of natural abilities, the
+        result of thousands of years of elven refinement.\n\n
+
+        Ability Score Increase: Your Dexterity score
+        increases by 2.\n\n
+
+        Age: Although elves reach physical maturity at about
+        the same age as humans, the elven understanding of
+        adulthood goes beyond physical growth to encompass
+        worldly experience. An elf typically claims adulthood
+        and an adult name around the age of 100 and can live
+        to be 750 years old.\n\n
+
+        Alignment: Elves love freedom, variety, and self expression,
+        so they lean strongly toward the gentler
+        aspects of chaos. They value and protect others\'
+        freedom as well as their own, and they are more
+        often good than not. The drow are an exception; their
+        exile into the Underdark has made them vicious and
+        dangerous. Drow are more often evil than not.\n\n
+
+        Size: Elves range from under 5 to over 6 feet tall and
+        have slender builds. Your size is Medium.\n\n
+
+        Speed: Your base walking speed is 30 feet.\n\n
+
+        Darkvision: Accustom ed to twilit forests and the night
+        sky, you have superior vision in dark and dim conditions.
+        You can see in dim light within 60 feet of you as if it
+        were bright light, and in darkness as if it were dim light.
+        You can’t discern color in darkness, only shades of gray.\n\n
+
+        Keen Senses: You have proficiency in the
+        Perception skill.\n\n
+
+        Fey Ancestry: You have advantage on saving throws
+        against being charmed, and magic can\’t put you to sleep.\n\n
+
+        Trance: Elves don’t need to sleep. Instead, they
+        meditate deeply, remaining semiconscious, for 4
+        hours a day. (The Common word for such meditation
+        is \“trance.\”) While meditating, you can dream after a
+        fashion; such dreams are actually mental exercises that
+        have become reflexive through years of practice. After
+        resting in this way, you gain the same benefit that a
+        human does from 8 hours of sleep.\n\n
+
+        Languages: You can speak, read, and write Common
+        and Elvish. Elvish is fluid, with subtle intonations and
+        intricate grammar. Elven literature is rich and varied,
+        and their songs and poems are famous among other
+        races. Many bards learn their language so they can add
+        Elvish ballads to their repertoires.</string>
+
+    <string name="halfling_header">Halfling</string>
+    <string name="halfling_quote">Regis the halfling, the only one of his kind for
+        hundreds of miles in any direction, locked his fingers behind
+        his head and leaned back against the mossy blanket
+        of the tree trunk. Regis was short, even by the standards
+        of his diminutive race, with the fluff of his curly brown
+        locks barely cresting the three-foot mark, but his belly was
+        amply thickened by his love of a good meal, or several, as
+        the opportunities presented themselves. The crooked stick
+        that served as his fishing pole rose up above him, clenched
+        between two of his toes, and hung out over the quiet lake,
+        mirrored perfectly in the glassy surface of Maer Dualdon.\n\n
+
+        —R.A. Salvatore, The Crystal Shard</string>
+    <string name="halfling_description">Your halfling character has a number of traits in
+        common with all other halflings.\n\n
+
+        Ability Score Increase: Your Dexterity score
+        increases by 2.\n\n
+
+        Age: A halfling reaches adulthood at the age of
+        20 and generally lives into the middle of his or her
+        second century.\n\n
+
+        Alignment: Most halflings are lawful good. As a rule,
+        they are good-hearted and kind, hate to see others in
+        pain, and have no tolerance for oppression. They are
+        also very orderly and traditional, leaning heavily on
+        the support of their community and the comfort of
+        their old ways.\n\n
+
+        Size: Halflings average about 3 feet tall and weigh
+        about 40 pounds. Your size is Small.\n\n
+
+        Speed: Your base walking speed is 25 feet.\n\n
+
+        Lucky: When you roll a 1 on an attack roll, ability
+        check, or saving throw, you can reroll the die and must
+        use the new roll.\n\n
+
+        Brave: You have advantage on saving throws against
+        being frightened.\n\n
+
+        Halfling Nimbleness: You can move through the
+        space of any creature that is of a size larger than yours.\n\n
+
+        Languages: You can speak, read, and write Common
+        and Halfling. The Halfling language isn’t secret, but
+        halflings are loath to share it with others. They write
+        very little, so they don’t have a rich body of literature.
+        Their oral tradition, however, is very strong. Almost all
+        halflings speak Common to converse with the people
+        in whose lands they dwell or through which they
+        are traveling.</string>
+
+    <string name="human_header">Human</string>
+    <string name="human_quote">These were the stories of a restless people who
+        long ago took to the seas and rivers in longboats, first to
+        pillage and terrorize, then to settle. Yet there was an energy,
+        a love of adventure, that sang from every page. Long into
+        the night Uriel read, lighting candle after precious candle.
+        She\'d never given much thought to humans, but these
+        stories fascinated her. In these yellowed pages were tales of
+        bold heroes, strange and fierce animals, mighty primitive gods,
+        and a magic that was part and fabric of that distant land.\n\n
+
+        —Elaine Cunningham , Daughter of the Drow</string>
+    <string name="human_description">It\’s hard to make generalizations about humans, but
+        your human character has these traits.\n\n
+
+        Ability Score Increase: Your ability scores each
+        increase by 1.\n\n
+
+        Age: Humans reach adulthood in their late teens and
+        live less than a century.\n\n
+
+        Alignment: Humans tend toward no
+        particular alignment. The best and the worst are
+        found am ong them.\n\n
+
+        Size: Humans vary widely in height and build, from
+        barely 5 feet to well over 6 feet tall. Regardless of your
+        position in that range, your size is Medium.\n\n
+
+        Speed: Your base walking speed is 30 feet.\n\n
+
+        Languages: You can speak, read, and write Common
+        and one extra language of your choice. Humans typically
+        learn the languages of other peoples they deal with,
+        including obscure dialects. They are fond of sprinkling
+        their speech with words borrowed from other tongues:
+        Orc curses, Elvish musical expressions, Dwarvish
+        military phrases, and so on.</string>
+
+    <string name="dragonborn_header">Dragonborn</string>
+    <string name="dragonborn_quote">Her father stood on the first of the three stairs
+        that led down from the portal, unmoving. The scales of his
+        face had grown paler around the edges, but Clanless Mehen
+        still looked as if he could wrestle down a dire bear himself.
+        His familiar well-worn armor was gone, replaced by
+        violet-tinted scale armor with bright silvery tracings. There
+        was a blazon on his arm as well, the mark of some foreign
+        house. The sword at his back was the same, though, the one
+        he had carried since even before he had found the twins left
+        in swaddling at the gates of Arush Vayem.
+        For all her life, Farideh had known that reading her
+        father\’s face was a skill she\'d been fortunate to learn. A
+        human who couldn\’t spot the shift of her eyes or Havilar\’s
+        would certainly see only the indifference of a dragon in
+        Clanless Mehen\’s face. But the shift of scales, the arch of a
+        ridge, the set of his eyes, the gape of his teeth\—her father\'s
+        face spoke volumes. But every scale of it, this time, seemed completely still\—
+        the indifference of a dragon, even to Farideh.\n\n
+
+        —Erin M. Evans, The Adversary
+    </string>
+    <string name="dragonborn_description">Your draconic heritage manifests in a variety of traits
+        you share with other dragonborn.\n\n
+
+        Ability Score Increase: Your Strength score
+        increases by 2, and your Charisma score increases by 1.\n\n
+
+        Age: Young dragonborn grow quickly. They walk
+        hours after hatching, attain the size and development
+        of a 10-year-old human child by the age of 3, and reach
+        adulthood by 15. They live to be around 80.\n\n
+
+        Alignment: Dragonborn tend to extremes, making a
+        conscious choice for one side or the other in the cosmic
+        war between good and evil (represented by Bahamut
+        and Tiamat, respectively). Most dragonborn are good,
+        but those who side with Tiamat can be terrible villains.\n\n
+
+        Size: Dragonborn are taller and heavier than humans,
+        standing well over 6 feet tall and averaging almost 250
+        pounds. Your size is Medium.\n\n
+
+        Speed: Your base walking speed is 30 feet.
+        \n\n
+
+        Draconic Ancestry: You have draconic ancestry.
+        Choose one type of dragon from the Draconic Ancestry
+        table. Your breath weapon and damage resistance are
+        determined by the dragon type, as shown in the table below.\n\n
+
+        Black Acid - 30 ft. line (Dex. save)\n
+        Blue Lightning - 30 ft. line (Dex. save)\n
+        Brass Fire - 30 ft. line (Dex. save)\n
+        Bronze Lightning - 30 ft. line (Dex. save)\n
+        Copper Acid - 30 ft. line (Dex. save)\n
+        Cold Fire - 15 ft. cone (Dex. save)\n
+        Green Poison - 15 ft. cone (Con. save)\n
+        Red Fire - 15 ft. cone (Dex. save)\n
+        Silver Cold - 15 ft. cone (Con. save)\n
+        White Cold - 15 ft. cone (Con. save)\n\n
+
+        Breath Weapon: You can use your action to exhale
+        destructive energy. Your draconic ancestry determines
+        the size, shape, and damage type of the exhalation.
+        W hen you use your breath weapon, each creature in
+        the area of the exhalation must make a saving throw,
+        the type of which is determined by your draconic
+        ancestry. The DC for this saving throw equals 8 +
+        your Constitution modifier + your proficiency bonus. A
+        creature takes 2d6 damage on a failed save, and half
+        as much damage on a successful one. The damage
+        increases to 3d6 at 6th level, 4d6 at 11th level, and 5d6
+        at 16th level. After you use your breath weapon, you can’t use it
+        again until you complete a short or long rest.\n\n
+
+        Damage Resistance: You have resistance to the
+        damage type associated with your draconic ancestry.\n\n
+
+        Languages: You can speak, read, and write Common
+        and Draconic. Draconic is thought to be one of the
+        oldest languages and is often used in the study of magic.
+        The language sounds harsh to m ost other creatures and
+        includes numerous hard consonants and sibilants.</string>
+
+    <array name="Dice_Types">
+        <item>"D2"</item>
+        <item>D4</item>
+        <item>D6</item>
+        <item>D8</item>
+        <item>D10</item>
+        <item>D12</item>
+        <item>D20</item>
+        <item>Percentile</item>
+    </array>
+
+    <string name="string_char_sheet_text">Character Sheet</string>
+    <string name="string_char_name_text">Character Name: </string>
+    <string name="string_char_level_text">Level: </string>
+    <string name="string_char_class_text">Class: </string>
+    <string name="string_char_race_text">Race: </string>
+    <string name="string_char_stats_text">Characters Stats: </string>
+    <string name="string_char_stats_str_text">Strength: </string>
+    <string name="string_char_stats_dex_text">Dexterity: </string>
+    <string name="string_char_stats_con_text">Constitution: </string>
+    <string name="string_char_stats_int_text">Intellect: </string>
+    <string name="string_char_stats_wis_text">Wisdom: </string>
+    <string name="string_char_stats_mod_text">Modifier: </string>
+    <string name="string_char_button_new">New</string>
+    <string name="string_char_button_save">Save</string>
+    <string name="string_char_button_load">Load</string>
+
+    <string-array name="races">
+        <item>Dwarf</item>
+        <item>Elf</item>
+        <item>Halfling</item>
+        <item>Human</item>
+        <item>Dragonborn</item>
+    </string-array>
+
+    <string-array name="classes">
+        <item>Barbarian</item>
+        <item>Bard</item>
+        <item>Cleric</item>
+        <item>Druid</item>
+        <item>Fighter</item>
+        <item>Monk</item>
+        <item>Paladin</item>
+        <item>Ranger</item>
+        <item>Rogue</item>
+        <item>Sorcerer</item>
+        <item>Warlock</item>
+        <item>Wizard</item>
+    </string-array>
+</resources>
