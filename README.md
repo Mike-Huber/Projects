@@ -4,13 +4,13 @@ This repository is for my personal use and is for storing my projects and test f
 
 ------------------------------------------------------------------------------------------------------------------------------------------
 
-## Assembly
-
-Everything in this assembly language folder is code that was written for my Computer Systems class when we went over IBM Assembly and how it works. This was written for basic purposes.
-
 ## CPP
 
 Array_and_Vector_Selection_Sort: This C++ code creates a simple array and sorts it, as well as timing the sort. It also creates a simple vector and sorts that, also timing that. This was done in school to compare the different ways of sorting.
+
+## Assembly
+
+Everything in this assembly language folder is code that was written for my Computer Systems class when we went over IBM Assembly and how it works. This was written for basic purposes.
 
 ## Java
 
