@@ -3,4 +3,4 @@ This is the source code for a knowledge management system implemented through a 
 
 **I do NOT take credit for all of the code provided in this project.**
 
-**Note**: make sure to look at the readme.txt file in the Tiki main folder, it contains instructions on what configurations need to be changed if you want to run the Wiki on your local computer.
+Note: The readme.txt file in the Tiki main folder contains instructions on what configurations need to be changed if you want to run the Wiki on your local computer.
