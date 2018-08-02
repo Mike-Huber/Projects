@@ -10,4 +10,4 @@ Java/Music_BST: This is Java code that creates an interactive JavaFX window that
 
 CPP/Array_and_Vector_Selection_Sort: This C++ code creates a simple array and sorts it, as well as timing the sort, and also creates a simple vector and sorts that, also timing it.
 
-Java/TicTacToe_Server: This Java code uses a socket to connect a client to our server and allows them to play TicTacToe against the server.
+Java/TicTacToe_Server: This Java code uses a socket to connect clients to a pseudo-server and allows them to play TicTacToe against that server.
